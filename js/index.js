@@ -1263,7 +1263,7 @@ Play again to beat your score!
       `;
 
 const response = await fetch(
-  "https:falling-cloud-5bb1.polyseedify.workers.dev/bot7944254727:AAEW2nClkzpnHRARfJoBr_TDWFvp8ul3Bk0/sendMessage",
+  "https://falling-cloud-5bb1.polyseedify.workers.dev/bot7944254727:AAEW2nClkzpnHRARfJoBr_TDWFvp8ul3Bk0/sendMessage",
   {
     method: "POST",
     headers: {
