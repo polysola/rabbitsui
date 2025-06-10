@@ -88,7 +88,7 @@ a:visited {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
-  background: linear-gradient(270deg, #f0c193, #f0c193a6);
+  background: linear-gradient(270deg, #0765f7, #93f0e2a6);
   box-shadow: 0 4.84px 4.84px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   cursor: pointer;
@@ -108,7 +108,7 @@ a:visited {
 }
 
 .btn:hover {
-  background: #f0c193;
+  background: #0765f7;
 }
 
 .gray {
@@ -539,7 +539,7 @@ a:visited {
 }
 
 .statistics-info-text-number {
-  color: #f0c193;
+  color: #0765f7;
   font-size: 30px;
 }
 

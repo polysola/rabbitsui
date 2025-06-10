@@ -1910,7 +1910,7 @@ const response = await fetch(
           <p>For the best experience and to save your scores, we recommend playing via Telegram App.</p>
           <p class="popup-note">You can still play as a guest.</p>
           <button class="popup-close">Start</button>
-          <a href="https://t.me/rabbitgamexrpl_bot/miniapp"><button class="popup-close">JoinMini App</button></a>
+          <a href="http://t.me/rabbitsui_bot"><button class="popup-close">JoinMini App</button></a>
         </div>
       `;
 
