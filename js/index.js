@@ -1270,7 +1270,7 @@ const response = await fetch(
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      chat_id: "1245498043", // 
+      chat_id: "-1002696090114", // 
       text: message,
     }),
   }
