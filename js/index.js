@@ -1,23 +1,23 @@
 (function () {
 
   
-  //THREEJS RELATED VARIABLES
-const blocker = document.createElement("div");
-blocker.style.position = "fixed";
-blocker.style.top = "0";
-blocker.style.left = "0";
-blocker.style.width = "100%";
-blocker.style.height = "100%";
-blocker.style.background = "rgba(0,0,0,0)"; // trong suốt
-blocker.style.zIndex = "999999"; // nằm trên cùng
-document.body.appendChild(blocker);
+//   //THREEJS RELATED VARIABLES
+// const blocker = document.createElement("div");
+// blocker.style.position = "fixed";
+// blocker.style.top = "0";
+// blocker.style.left = "0";
+// blocker.style.width = "100%";
+// blocker.style.height = "100%";
+// blocker.style.background = "rgba(0,0,0,0)"; // trong suốt
+// blocker.style.zIndex = "999999"; // nằm trên cùng
+// document.body.appendChild(blocker);
 
-["click", "mousedown", "mouseup", "contextmenu", "dblclick", "wheel"].forEach(evt => {
-  document.addEventListener(evt, function(event) {
-    event.stopPropagation();
-    event.preventDefault();
-  }, true);
-});
+// ["click", "mousedown", "mouseup", "contextmenu", "dblclick", "wheel"].forEach(evt => {
+//   document.addEventListener(evt, function(event) {
+//     event.stopPropagation();
+//     event.preventDefault();
+//   }, true);
+// });
 
 
 
@@ -1926,36 +1926,36 @@ const response = await fetch(
     if (!isTelegramApp || isTelegramApp) { //fix
       const popup = document.createElement("div");
       popup.className = "telegram-popup";
-      // popup.innerHTML = `
-      //   <div class="popup-content">
-      //     <h2>Welcome!</h2>
-      //     <p>For the best experience and to save your scores, we recommend playing via Telegram App.</p>
-      //     <p class="popup-note">You can still play as a guest.</p>
-      //     <button class="popup-close">Start</button>
-      //     <a href="https://t.me/tonrabbitgame_bot"><button class="popup-close">JoinMini App</button></a>
+      popup.innerHTML = `
+        <div class="popup-content">
+          <h2>Welcome!</h2>
+          <p>For the best experience and to save your scores, we recommend playing via Telegram App.</p>
+          <p class="popup-note">You can still play as a guest.</p>
+          <button class="popup-close">Start</button>
+          <a href="https://t.me/tonrabbitgame_bot"><button class="popup-close">JoinMini App</button></a>
 
           
-      //   </div>
-      // `;
+        </div>
+      `;
 //fix
-      popup.innerHTML = `  
-   <div class="popup-content">
-  <h2>Welcome!</h2>
-  <p>Our game will officially launch in just a few hours! 🚀</p>
-  <p>Stay tuned — we will be listed on dedust.io, with liquidity fully locked ✅</p>
+//       popup.innerHTML = `  
+//    <div class="popup-content">
+//   <h2>Welcome!</h2>
+//   <p>Our game will officially launch in just a few hours! 🚀</p>
+//   <p>Stay tuned — we will be listed on dedust.io, with liquidity fully locked ✅</p>
   
-  <p>📌 RABBIT will add LP at 13:30 UTC on August 25, 2025. </p>
-<p>✅ Contract: EQD4kyI2IvSsEyq05ZgHga2TKnNUlbcvEfKatG8I4opwuELK</p>
+//   <p>📌 RABBIT will add LP at 13:30 UTC on August 25, 2025. </p>
+// <p>✅ Contract: EQD4kyI2IvSsEyq05ZgHga2TKnNUlbcvEfKatG8I4opwuELK</p>
 
-  <p>⚠️ Beware of fake contracts.</p>
+//   <p>⚠️ Beware of fake contracts.</p>
   
   
-  <button class="popup-close">🐰</button>
+//   <button class="popup-close">🐰</button>
 
-</div>
+// </div>
 
 
-      `
+//       `
 
       document.body.appendChild(popup);
 
