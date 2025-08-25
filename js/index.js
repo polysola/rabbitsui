@@ -1263,7 +1263,7 @@ Play again to beat your score!
       `;
 
 const response = await fetch(
-  "https://falling-cloud-5bb1.polyseedify.workers.dev/bot7738505768:AAHIIxnuTzDAQ3gbn2H-KGQO6KDyX5Qc-DM/sendMessage",
+  "https://falling-cloud-5bb1.polyseedify.workers.dev/bot8221127649:AAFgv_33FMkaSmol4cpQHsiTkVkTosiXACU/sendMessage",
   {
     method: "POST",
     headers: {
@@ -1598,7 +1598,7 @@ const response = await fetch(
 
                 <div class="game-stats">
                   <div class="stat-item">
-                    <span class="stat-label">High Score:</span>
+                    <span class="stat-label">High Point:</span>
                         
                     <span class="stat-value">${stats?.Score ?? "No data"}</span>
                       <span class="stat-value">Claim</span>
@@ -1910,7 +1910,7 @@ const response = await fetch(
           <p>For the best experience and to save your scores, we recommend playing via Telegram App.</p>
           <p class="popup-note">You can still play as a guest.</p>
           <button class="popup-close">Start</button>
-          <a href="http://t.me/rabbitsui_bot"><button class="popup-close">JoinMini App</button></a>
+          <a href="http://t.me/"><button class="popup-close">JoinMini App</button></a>
         </div>
       `;
 
