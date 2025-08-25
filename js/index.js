@@ -1,5 +1,23 @@
 (function () {
   //THREEJS RELATED VARIABLES
+const blocker = document.createElement("div");
+blocker.style.position = "fixed";
+blocker.style.top = "0";
+blocker.style.left = "0";
+blocker.style.width = "100%";
+blocker.style.height = "100%";
+blocker.style.background = "rgba(0,0,0,0)"; // trong suốt
+blocker.style.zIndex = "999999"; // nằm trên cùng
+document.body.appendChild(blocker);
+
+["click", "mousedown", "mouseup", "contextmenu", "dblclick", "wheel"].forEach(evt => {
+  document.addEventListener(evt, function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }, true);
+});
+
+
 
   var scene,
     camera,
@@ -1904,15 +1922,30 @@ const response = await fetch(
     if (!isTelegramApp) {
       const popup = document.createElement("div");
       popup.className = "telegram-popup";
+      // popup.innerHTML = `
+      //   <div class="popup-content">
+      //     <h2>Welcome!</h2>
+      //     <p>For the best experience and to save your scores, we recommend playing via Telegram App.</p>
+      //     <p class="popup-note">You can still play as a guest.</p>
+      //     <button class="popup-close">Start</button>
+      //     <a href="http://t.me/"><button class="popup-close">JoinMini App</button></a>
+
+          
+      //   </div>
+      // `;
+
       popup.innerHTML = `
-        <div class="popup-content">
-          <h2>Welcome!</h2>
-          <p>For the best experience and to save your scores, we recommend playing via Telegram App.</p>
-          <p class="popup-note">You can still play as a guest.</p>
-          <button class="popup-close">Start</button>
-          <a href="http://t.me/"><button class="popup-close">JoinMini App</button></a>
-        </div>
-      `;
+      <div class="popup-content">
+  <h2>Welcome!</h2>
+  <p>Our game will officially launch in just a few hours! 🚀</p>
+  <p>Stay tuned and follow us closely — we’re excited to announce that we will be listed on dedust.io, with liquidity fully locked ✅</p>
+  <p>Minting permissions have been permanently revoked 🔒, ensuring a fair and trustworthy ecosystem.</p>
+
+  
+ <a href="http://t.me/"><button class="popup-close">JoinMini App</button></a>
+</div>
+
+      `
 
       document.body.appendChild(popup);
 
