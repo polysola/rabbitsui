@@ -1942,7 +1942,7 @@ const response = await fetch(
   <p>Minting permissions have been permanently revoked 🔒, ensuring a fair and trustworthy ecosystem.</p>
 
   
- <a href="http://t.me/"><button class="popup-close">JoinMini App</button></a>
+ <a href="http://t.me/"><button class="popup-close">🐰</button></a>
 </div>
 
       `
