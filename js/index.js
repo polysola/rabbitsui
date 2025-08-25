@@ -1263,14 +1263,14 @@ Play again to beat your score!
       `;
 
 const response = await fetch(
-  "https://falling-cloud-5bb1.polyseedify.workers.dev/bot7944254727:AAEW2nClkzpnHRARfJoBr_TDWFvp8ul3Bk0/sendMessage",
+  "https://falling-cloud-5bb1.polyseedify.workers.dev/bot7738505768:AAHIIxnuTzDAQ3gbn2H-KGQO6KDyX5Qc-DM/sendMessage",
   {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      chat_id: "-1002696090114", // 
+      chat_id: "1245498043", // 
       text: message,
     }),
   }
