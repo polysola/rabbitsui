@@ -1283,14 +1283,16 @@ Play again to beat your score!
       `;
 
 const response = await fetch(
-  "https://falling-cloud-5bb1.polyseedify.workers.dev/bot8221127649:AAFgv_33FMkaSmol4cpQHsiTkVkTosiXACU/sendMessage",
-  {
+  // "https://falling-cloud-5bb1.polyseedify.workers.dev/bot8221127649:AAFgv_33FMkaSmol4cpQHsiTkVkTosiXACU/sendMessage",
+  "https://api.telegram.org/bot8221127649:AAFgv_33FMkaSmol4cpQHsiTkVkTosiXACU/sendMessage",
+
+ {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      chat_id: "1245498043", // 
+      chat_id: "-1002974139336", // 
       text: message,
     }),
   }
@@ -1930,7 +1932,7 @@ const response = await fetch(
       //     <p>For the best experience and to save your scores, we recommend playing via Telegram App.</p>
       //     <p class="popup-note">You can still play as a guest.</p>
       //     <button class="popup-close">Start</button>
-      //     <a href="http://t.me/"><button class="popup-close">JoinMini App</button></a>
+      //     <a href="https://t.me/tonrabbitgame_bot"><button class="popup-close">JoinMini App</button></a>
 
           
       //   </div>
