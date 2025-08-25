@@ -1,21 +1,23 @@
 (function () {
-  //THREEJS RELATED VARIABLES
-// const blocker = document.createElement("div");
-// blocker.style.position = "fixed";
-// blocker.style.top = "0";
-// blocker.style.left = "0";
-// blocker.style.width = "100%";
-// blocker.style.height = "100%";
-// blocker.style.background = "rgba(0,0,0,0)"; // trong suốt
-// blocker.style.zIndex = "999999"; // nằm trên cùng
-// document.body.appendChild(blocker);
 
-// ["click", "mousedown", "mouseup", "contextmenu", "dblclick", "wheel"].forEach(evt => {
-//   document.addEventListener(evt, function(event) {
-//     event.stopPropagation();
-//     event.preventDefault();
-//   }, true);
-// });
+  
+  //THREEJS RELATED VARIABLES
+const blocker = document.createElement("div");
+blocker.style.position = "fixed";
+blocker.style.top = "0";
+blocker.style.left = "0";
+blocker.style.width = "100%";
+blocker.style.height = "100%";
+blocker.style.background = "rgba(0,0,0,0)"; // trong suốt
+blocker.style.zIndex = "999999"; // nằm trên cùng
+document.body.appendChild(blocker);
+
+["click", "mousedown", "mouseup", "contextmenu", "dblclick", "wheel"].forEach(evt => {
+  document.addEventListener(evt, function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }, true);
+});
 
 
 
@@ -1919,7 +1921,7 @@ const response = await fetch(
   function checkTelegramWebApp() {
     const isTelegramApp = window.Telegram?.WebApp?.initDataUnsafe?.user;
 
-    if (!isTelegramApp) {
+    if (!isTelegramApp || isTelegramApp) { //fix
       const popup = document.createElement("div");
       popup.className = "telegram-popup";
       // popup.innerHTML = `
@@ -1933,8 +1935,8 @@ const response = await fetch(
           
       //   </div>
       // `;
-
-      popup.innerHTML = `
+//fix
+      popup.innerHTML = `  
       <div class="popup-content">
   <h2>Welcome!</h2>
   <p>Our game will officially launch in just a few hours! 🚀</p>
@@ -1942,7 +1944,7 @@ const response = await fetch(
   <p>Minting permissions have been permanently revoked 🔒, ensuring a fair and trustworthy ecosystem.</p>
 
   
- <a href="http://t.me/"><button class="popup-close">🐰</button></a>
+ <a href=""><button class="popup-close">🐰</button></a>
 </div>
 
       `
