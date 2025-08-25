@@ -1,21 +1,21 @@
 (function () {
   //THREEJS RELATED VARIABLES
-const blocker = document.createElement("div");
-blocker.style.position = "fixed";
-blocker.style.top = "0";
-blocker.style.left = "0";
-blocker.style.width = "100%";
-blocker.style.height = "100%";
-blocker.style.background = "rgba(0,0,0,0)"; // trong suốt
-blocker.style.zIndex = "999999"; // nằm trên cùng
-document.body.appendChild(blocker);
+// const blocker = document.createElement("div");
+// blocker.style.position = "fixed";
+// blocker.style.top = "0";
+// blocker.style.left = "0";
+// blocker.style.width = "100%";
+// blocker.style.height = "100%";
+// blocker.style.background = "rgba(0,0,0,0)"; // trong suốt
+// blocker.style.zIndex = "999999"; // nằm trên cùng
+// document.body.appendChild(blocker);
 
-["click", "mousedown", "mouseup", "contextmenu", "dblclick", "wheel"].forEach(evt => {
-  document.addEventListener(evt, function(event) {
-    event.stopPropagation();
-    event.preventDefault();
-  }, true);
-});
+// ["click", "mousedown", "mouseup", "contextmenu", "dblclick", "wheel"].forEach(evt => {
+//   document.addEventListener(evt, function(event) {
+//     event.stopPropagation();
+//     event.preventDefault();
+//   }, true);
+// });
 
 
 
