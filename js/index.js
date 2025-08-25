@@ -1939,15 +1939,21 @@ const response = await fetch(
       // `;
 //fix
       popup.innerHTML = `  
-      <div class="popup-content">
+   <div class="popup-content">
   <h2>Welcome!</h2>
   <p>Our game will officially launch in just a few hours! 🚀</p>
-  <p>Stay tuned and follow us closely — we’re excited to announce that we will be listed on dedust.io, with liquidity fully locked ✅</p>
-  <p>Minting permissions have been permanently revoked 🔒, ensuring a fair and trustworthy ecosystem.</p>
-
+  <p>Stay tuned — we will be listed on dedust.io, with liquidity fully locked ✅</p>
   
- <a href=""><button class="popup-close">🐰</button></a>
+  <p>📌 RABBIT will add LP at 13:30 UTC on August 25, 2025. </p>
+<p>✅ Contract: EQD4kyI2IvSsEyq05ZgHga2TKnNUlbcvEfKatG8I4opwuELK</p>
+
+  <p>⚠️ Beware of fake contracts.</p>
+  
+  
+  <button class="popup-close">🐰</button>
+
 </div>
+
 
       `
 
