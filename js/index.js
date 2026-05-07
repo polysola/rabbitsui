@@ -1932,7 +1932,7 @@ const response = await fetch(
           <p>For the best experience and to save your scores, we recommend playing via Telegram App.</p>
           <p class="popup-note">You can still play as a guest.</p>
           <button class="popup-close">Start</button>
-          <a href="https://t.me/tonrabbitgame_bot"><button class="popup-close">JoinMini App</button></a>
+          <a href="https://t.me/tonBunnyp2e_Bot"><button class="popup-close">JoinMini App</button></a>
 
           
         </div>
