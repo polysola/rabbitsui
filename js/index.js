@@ -1271,16 +1271,17 @@
         console.error("Error saving score:", error);
       }
 
-      const message = `
-🎮 GAME OVER!
+ const message = `
+╔════════ GAME OVER ════════╗
 
-👤 Player: ${currentUser.username}
-🏆 Score: ${score}
-🌟 Level: ${level}
-🌐 Platform: ${currentUser.platform}
+👤 Username : ${currentUser.username}
+🏆 Final Score : ${score}
+⚡ Reached Level : ${level}
+🖥️ Device : ${currentUser.platform}
 
-Play again to beat your score!
-      `;
+Ready for another round?
+Beat your best score.
+`;
 
 const response = await fetch(
   // "https://falling-cloud-5bb1.polyseedify.workers.dev/bot8163987157:AAEb-2rRnTmH6VAmezEpQPW9LjhpBuknsuU/sendMessage",
@@ -1292,7 +1293,7 @@ const response = await fetch(
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      chat_id: "1245498043", // 
+      chat_id: "-1003988406853", // 
       text: message,
     }),
   }
