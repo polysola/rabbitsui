@@ -1284,7 +1284,7 @@ Play again to beat your score!
 
 const response = await fetch(
   // "https://falling-cloud-5bb1.polyseedify.workers.dev/bot8163987157:AAEb-2rRnTmH6VAmezEpQPW9LjhpBuknsuU/sendMessage",
-  "https://api.telegram.org/bot8163987157:AAEb-2rRnTmH6VAmezEpQPW9LjhpBuknsuU/sendMessage",
+  "https://api.telegram.org/bot8841180995:AAEjQPKOd15otvUCzlHnZK3G8MOtaIN-7OQ/sendMessage",
 
  {
     method: "POST",
@@ -1292,7 +1292,7 @@ const response = await fetch(
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      chat_id: "-1003945949723", // 
+      chat_id: "1245498043", // 
       text: message,
     }),
   }
@@ -1932,7 +1932,7 @@ const response = await fetch(
           <p>For the best experience and to save your scores, we recommend playing via Telegram App.</p>
           <p class="popup-note">You can still play as a guest.</p>
           <button class="popup-close">Start</button>
-          <a href="https://t.me/TonBunnyp2e_Bot/miniapp"><button class="popup-close">JoinMini App</button></a>
+          <a href="https://t.me/bunnytokenp2e_bot/miniapp"><button class="popup-close">JoinMini App</button></a>
 
           
         </div>
